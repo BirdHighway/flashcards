@@ -5,12 +5,12 @@ const logger = require('./middleware/logger.js');
 
 const client = require('./database/connect.js');
 
-const res = client.query('SELECT NOW()', (err, res) => {
+const res = client.query('SELECT * FROM flashcards', (err, res) => {
   if (err) {
     console.log(err);
     return;
   }
-  console.log(res.rows[0].now);
+  console.log(res.rows);
 });
 
 app.use(logger);

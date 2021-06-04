@@ -1,0 +1,6 @@
+DROP TABLE IF EXISTS flashcards;
+CREATE TABLE flashcards(
+  card_id SERIAL PRIMARY KEY,
+  prompt VARCHAR NOT NULL,
+  answer VARCHAR
+);

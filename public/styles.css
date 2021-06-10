@@ -44,3 +44,13 @@ h3.header {
 :not(h3.header) {
   font-weight: 300;
 }
+
+div.progress-bar {
+  border: 2px solid red;
+  display: flex;
+}
+
+div[role="progress-indicator"] {
+  flex: 1;
+  border: 1px solid black;
+}

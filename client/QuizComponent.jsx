@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import CardProgress from './CardProgress';
 
 const QuizComponent = (props) => {
 
@@ -37,6 +38,7 @@ const QuizComponent = (props) => {
 
   return (
     <div className='quiz-container'>
+      <CardProgress currentIndex={flashcardIndex} cardCount={props.flashcards.length} />
       <div className='quiz-display'>
         <div className='display-prompt'>
           <h3 className='header'>Prompt</h3>
